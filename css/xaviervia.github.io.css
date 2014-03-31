@@ -1,0 +1,107 @@
+
+.grid {          
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" version="1.1"><rect style="fill:#ff6600;fill-opacity:1;" width="36" height="1" x="0" y="17" /><rect style="fill:#ff6600;fill-opacity:0.3;" width="36" height="1" x="0" y="2" /><rect style="fill:#ff6600;fill-opacity:1;" width="36" height="1" x="0" y="35" /><rect style="fill:#ff6600;fill-opacity:0.3;" width="36" height="1" x="0" y="20" /><rect style="fill:#ff6600;fill-opacity:1;stroke:none" width="1" height="36" x="0" y="0" /><rect style="fill:#ff6600;fill-opacity:1;stroke:none" width="1" height="36" x="18" y="0" /></svg>');
+}
+
+html, body {
+  font-size: 15px;
+  line-height: 1.2rem;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  text-align: center;
+  color: #333;
+}
+
+header {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;  
+  width: 30rem;
+  display: flex;          /* NEW: IE11, Chrome 29+, Opera 12.1+, Firefox 22+ */
+  align-items: center;  
+  justify-content: center;  
+  height: 100%;
+}
+
+header article {
+  -webkit-box-align: center; -moz-box-align: center; /* OLD… */
+  -ms-flex-align: center; /* You know the drill now… */
+  -webkit-align-items: center;
+  align-items: center;  
+}
+
+header img {
+  margin: 0 auto;
+  display: block;
+  border-radius: 9.6rem;
+  width: 9.6rem;
+  height: 9.6rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  font-weight: 300;
+  margin: 2.4rem 0 .6rem 0;
+}
+
+nav {
+  background-color: #08d;
+  display: block;
+  width: 100%;
+  padding-top: .5rem;
+  height: 1.9rem;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+}
+
+nav a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .25rem;
+  text-decoration: none;
+  padding: 1rem 1.2rem;
+  transition: background-color .1s linear;
+}
+
+nav a span {
+  font-size: .75rem;
+}
+
+nav a:hover, nav a:active, nav a:focus {
+  background-color: #09f;
+}
+
+p {
+  font-family: 'Lora', serif;
+  margin: .6rem 0;
+}
+
+p a {
+  color: #08d;
+  text-decoration: none;
+}
+
+p span {
+  color: #999;
+}
+
+a:hover, a:active, a:focus {
+  outline: none;
+}
+
+
+@media screen and (min-width: 720px) {
+  html, body {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  html, body {
+    font-size: 25px;
+  }
+}
