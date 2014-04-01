@@ -1,3 +1,5 @@
 Align the landscape version of posts so to look like a card
 Correct the alignment of the library cards
 Add a contact section
+Set device width!
+Webkit mobile, for a change, breaks it
