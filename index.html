@@ -5,8 +5,10 @@
     <title>Fernando Vía Canel</title>
     <meta name="description" content="Full stack developer. My professional portfolio, which in the end amounts to a bunch of links." />
     
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/languages.css" />
     <link rel="stylesheet" href="css/xaviervia.github.io.css" />
 
     <script type="text/javascript" src="components/jquery/dist/jquery.min.js"></script>
@@ -16,12 +18,16 @@
   <body>                           
     <nav>
       <a href="#header"><span>about</span></a>
-      <a href="#work"><span>work</span></a>
+      <a href="#apps"><span><span>(micro)</span> apps</span></a>
+      <a href="#posts"><span>posts</span></a>
+      <a href="#libs"><span>libs</span></a>
     </nav>
 
     <header id="header" class="card">
-      <article>      
-        <img src="img/me.jpg" />
+      <div>      
+        <img 
+          src="img/me.jpg" 
+          title="Profile picture" />
         <h1>Fernando Vía Canel</h1>
         <p>
           <em>xaviervia</em> <span>@</span> 
@@ -37,14 +43,148 @@
             href="//coderwall.com/xaviervia"
             title="xaviervia @ coderwall"
             target="_blank">coderwall</a></p>
-      </article>
+      </div>
     </header>
 
     <main>
-      <section id="work" class="card">
-        <article class="grid">
+      <section id="apps">
+        <div>
+          <h2><span>(micro)</span> apps</h2>
+          <dl>
+            <dt>LearnFast</dt>
+            <dd>
+              <a 
+                href="//xaviervia.github.io/learnfast"
+                target="_blank" 
+                title="LearnFast, concept app for language comprehension">
+                <img 
+                  src="img/learnfast.png" 
+                  alt="LearnFast screenshot" />
+              </a>
+            </dd>
+          </dl>
+          <dl>
+            <dt>DIY Responsive Grid<a href="#footnote-1">*</a></dt>
+            <dd>
+              <a 
+                href="//southlogics.github.io/diy-responsive-grid/calculator"
+                target="_blank"
+                title="DIY Responsive Grid, grid calculator for hand crafted guides">
+                <img 
+                  src="img/diy-responsive-grid.png" 
+                  alt="DIY Responsive Grid screenshot" />
+              </a>
+            </dd>
+          </dl>
+          <p class="small" id="footnote-1">* the grid for this website was generated using the <em>DIY Responsive Grid</em> calculator.</p>
+        </div>        
+      </section>
+
+      <section id="posts">
+        <div>
+          <h2>posts <span>aka articles</span></h2>  
+
+          <blockquote>
+            <a 
+              href="//coderwall.com/p/alewja"
+              target="_blank" 
+              title="A better BDD/TDD article @ coderwall">
+              <h3>A better BDD/TDD</h3>
+              <p>TDD and BDD are great. As development tools, they set a common language for the team, create an active documentation and keep track of the project’s status. This advantages had made BDD/TDD an indispensable part of my process, but some experience with them made me realize there are still problems to be tackled with the BDD/TDD practice if it’s going to be viable… <mark>read more</mark></p>
+            </a>
+          </blockquote>
+
+          <blockquote>
+            <a 
+              href="//coderwall.com/p/nh7ong"
+              target="_blank" 
+              title="7steps organization system: a short why article @ coderwall">
+              <h3>7steps organization system: a short why</h3>
+              <p>At SouthLogics we tried several organizational methods, such as Agile, Just Do It and the old school Waterfall. None of them worked for us, and we remained frustrated in that aspect—that is, until we decided to apply to organization the one aspect of the Lean Startup methodology that really ringed a bell… <mark>read more</mark></p>
+            </a>
+          </blockquote>
+
+          <blockquote>
+            <a 
+              href="//coderwall.com/p/9jh9wq"
+              target="_blank" 
+              title="The DIY Responsive Grid article @ coderwall">
+              <h3>The DIY Responsive Grid</h3>
+              <p>The DIY Responsive Grid is a no-framework solution for building robust and very stylish responsive design grids for the web. @lbertenasco and I developed it briefly after reading grid concepts from Thinking with Type, so be warned of designerish slang… <mark>read more</mark></p>
+            </a>
+          </blockquote>
+        </div>
+      </section>
+
+      <section id="libs">
+        <div>
+          <h2>libraries</h2>
+
+          <article class="ruby">
+            <a 
+              href="//github.com/xaviervia/fast"
+              target="_blank">
+              <i class="icon-ruby"></i>
+              <hgroup>
+                <h3>fast</h3>
+                <p class="small">Ruby Gem</p>
+              </hgroup>
+              <p>Domain specific language for intuitive filesystem interaction</p>
+            </a>
+          </article>
+
+          <article class="ruby">
+            <a 
+              href="//github.com/xaviervia/mongo-fixture"
+              target="_blank">
+              <i class="icon-ruby"></i>
+              <hgroup>
+                <h3>mongo-fixture</h3>
+                <p class="small">Ruby Gem</p>
+              </hgroup>
+              <p>Fixture management for MongoDB</p>
+            </a>
+          </article>
           
-        </article>        
+          <article class="ruby">
+            <a 
+              href="//github.com/xaviervia/sequel-fixture"
+              target="_blank">
+              <i class="icon-ruby"></i>
+              <hgroup>
+                <h3>sequel-fixture</h3>
+                <p class="small">Ruby Gem</p>
+              </hgroup>
+              <p>Fixture management for Sequel <span>now maintained by Whitepages</span></p>
+            </a>
+          </article>       
+             
+          <article class="ruby">
+            <a 
+              href="//github.com/xaviervia/symbolmatrix"
+              target="_blank">
+              <i class="icon-ruby"></i>
+              <hgroup>
+                <h3>symbolmatrix</h3>
+                <p class="small">Ruby Gem</p>
+              </hgroup>
+              <p>Hash-like multidimentional Symbol-only class. Very useful for configuration objects</p>
+            </a>
+          </article>   
+             
+          <article class="node">
+            <a 
+              href="//github.com/xaviervia/locco"
+              target="_blank">
+              <i class="icon-node"></i>
+              <hgroup>
+                <h3>locco</h3>
+                <p class="small">Node Package</p>
+              </hgroup>
+              <p>Partial Docco port with no Pygmentize dependencies</p>
+            </a>
+          </article>
+        </div>
       </section>
     </main>
   </body>
